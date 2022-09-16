@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print_square -  prints a square.
+ * print_square - prints a square, followed by a new line
  * @size: size - Variable
- * Return: Alwys 0
+ * Return: Always 0.
  */
 void print_square(int size)
 {
@@ -13,7 +13,7 @@ void print_square(int size)
 	{
 		for (x = 1; x <= size; x++)
 		{
-			for (y = 1; <= size; y++)
+			for (y = 1; x <= size; y++)
 			{
 				_putchar('#');
 			}
