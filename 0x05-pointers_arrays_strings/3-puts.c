@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _puts - function that prints a string, followed by a new line,
- * to stdout.
- * @str: validate the character
- * Return: Always 0.
+ * _puts - function that prints a string, followed
+ * by a new line, to stdout
+ * @str: validate the checker
+ * Return: Always 0
  */
 void _puts(char *str)
 {
@@ -12,7 +12,7 @@ void _puts(char *str)
 
 	for (i = 0; str[i] != '\0' ; i++)
 	{
-		putchar(str[i];
+		_putchar(str[i]);
 	}
 	_putchar('\n');
 }
