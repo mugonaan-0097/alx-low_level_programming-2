@@ -2,7 +2,6 @@
 
 /**
  * main - write your line of code here...
- * Remember:
  * - you are not allowed to used a
  * - you are not allowed to modify p
  * - only one statement
