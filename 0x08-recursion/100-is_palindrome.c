@@ -24,13 +24,13 @@ int long_1(char *s)
  */
 int compare(char *s, int l)
 {
-	if (1 <= 0)
+	if (l <= 0)
 	{
 		return (1);
 	}
-	if (*s == *(s + (1 - 1)))
+	if (*s == *(s + (l - 1)))
 	{
-		return (compare(s + 1, 1 - 2));
+		return (compare(s + 1, l - 2));
 	}
 	else
 	{
