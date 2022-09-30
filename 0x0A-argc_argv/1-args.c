@@ -8,9 +8,10 @@
  *
  * Return: Always 0 (success)
  */
+
 int main(int argc, char *argv[])
 {
-	(void) argv; /*ignoreargv*/
+	(void) argv; /*ignore argv*/
 	printf("%1\n", argc - 1);
 
 	return (0);
