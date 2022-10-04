@@ -3,7 +3,7 @@
 /**
  * print_last_digit - the function.
  *
- * @er: is the variable of the function.
+ * @r: is the variable of the function.
  * Return: Always 0.
  */
 int print_last_digit(int r)
