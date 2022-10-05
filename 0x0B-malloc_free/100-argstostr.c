@@ -3,13 +3,12 @@
 #include <stdlib.h>
 
 /**
- * argstostr - function that concatenates all the arguments
- * of your program.
+ * argstostr - function that concatenates all the arguments of your program.
  *
  * @ac: ARGC
  * @av: ARGV
  *
- * Rerurn: pointer
+ * Return: pointer
  */
 char *argstostr(int ac, char **av)
 {
@@ -17,8 +16,7 @@ char *argstostr(int ac, char **av)
 	char *string;
 
 	if (ac == 0 || av == '\0')
-	return (NULL);
-
+		return (NULL);
 	for (i = 0; i < ac; i++)
 	{
 		j = 0;
