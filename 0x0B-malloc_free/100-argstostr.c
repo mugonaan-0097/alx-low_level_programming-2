@@ -5,42 +5,42 @@
 /**
  * argstostr - function that concatenates all the arguments of your program.
  *
- * @ac: ARGC
- * @av: ARGV
- *
+ * @ac: number of argument
+ * @av: argument
  * Return: pointer
  */
 char *argstostr(int ac, char **av)
 {
-	int i = 0, j, longitud = 0, l, k;
-	char *string;
+	int i;
+	int j;
+	char *p = NULL;
+	int k;
+	int ext;
 
-	if (ac == 0 || av == '\0')
+	k = 0;
+	ext = 0;
+	if (ac == 0 || av NULL)
 		return (NULL);
 	for (i = 0; i < ac; i++)
 	{
-		j = 0;
-		while (av[i][j] != '\0')
+		for (j = 0; av[i][j] != '\0'; j++)
 		{
-			j++;
+			ext++;
 		}
-		longitud += j + 1;
 	}
-	string = malloc(sizeof(char) * (longitud + 1));
-	if (string == NULL)
-	{
+	p = (char *)malloc(ext + ac + 1 * sizeof(char));
+	if (p == NULL)
 		return (NULL);
-	}
-	longitud = 0;
-	for (k = 0; k < ac; k++)
+	for (i = 0; i < ac; i++)
 	{
-		for (l = 0; av[k][l] != '\0'; l++)
+		for (j = 0; av[i][j] != '\0'; j++)
 		{
-			*(string + longitud) = av[k][l];
-			longitud++;
+			p[k] = av[i][j];
+			k++;
 		}
-		*(string + longitud) = '\n';
-		longitud++;
+		p[k] = '\n';
+		k++;
 	}
-	return (string);
+	p[k] = '\0';
+	return (p);
 }
